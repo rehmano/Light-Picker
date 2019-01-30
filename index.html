@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Page Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <!-- Bootstrap CDN -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+        <!-- Font Awesome CDN -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+        <!-- Material Design for Bootstrap -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.0/css/mdb.min.css">
+
+        <style>
+            body {
+                background-color:gray;
+            }
+            #box {
+                height: 30vh;
+                width: auto;
+                border: 1px solid gray;
+                overflow-x: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-dark bg-dark justify-content-between">
+            <a href="https://github.com/rehmano/Portfolio" class="fab fa-github fa-2x" role="button"></a>  
+        </nav>
+        <div class="container">
+            <div class="card-deck  mb-3 text-center" style="padding-top:6vh">
+                <div class="card bg-dark text-white mb-6 box-shadow">
+                    <div class="card-header">
+                        <h2>Functions</h2> 
+                    </div>
+                    <div class="card-body">
+                        <div class="list-group">
+                            
+                            <a href="#" class="list-group-item list-group-item-action btn-outline-light text-white bg-dark">Blink</a>
+                            <a href="#" class="list-group-item list-group-item-action btn-outline-light text-white text-dark">Fade</a>
+                            <a href="#" class="list-group-item list-group-item-action btn-outline-light text-white text-dark">Static</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-dark text-white mb-6 box-shadow">
+                    <div class="card-header">
+                        <h2>RBG</h2>
+                    </div>
+                    <div class="card-body">
+                        Red<input type="range" min="0" max="255" step="1" id="red">
+                        <br>
+                        Blue<input type="range" min="0" max="255" step="1" id="red">
+                        <br>
+                        Green<input type="range" min="0" max="255" step="1" id="red">
+                        <br>
+                        <input type="button" class="btn btn-outline-light" id="submitbtn" value="Submit"/>
+
+                    </div>
+                </div>
+            </div>
+            <div class="card-deck mb-3 text-center">
+                <div class="card bg-dark text-white mb-12 box-shadow">
+                    <div class="card-body">
+                        <div class="btn-outline-light "id="box"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        
+        <script src="assets/main.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    </body>
+
+</html>
